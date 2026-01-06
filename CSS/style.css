@@ -66,6 +66,10 @@ a:hover{
   font-weight: bold;
   border-radius: 5px;
 }
+.btn:hover{
+  background-color: white;
+  /* color: #22c55e; */
+}
 
 
 .hero-img img{
@@ -134,18 +138,16 @@ img:hover{
 .contact-container{
   display: flex;
   flex-wrap: wrap;
-  width: 60%;
-  margin-left: 300px;
+  /* width: 60%; */
+  max-width: 500px;
+  margin: auto;
   justify-content: center;
 }
-#contact-container{
-  background-color: gray;
-  
-}
-.contact-form{
+
+/* .contact-form{
   width: 100%;
   max-width: 500px;
-}
+} */
 .contact input,
 .contact textarea{
   width: 100%;
@@ -166,24 +168,26 @@ img:hover{
   width: 50%;
   padding: 14px;
   background-color: #22c55e;
-  color: black; */
+  color: black; 
   border: none;
   border-radius: 10px;
   font-size: 18px;
   font-weight: bold;
   cursor:pointer;
   transition: 0.3s;
-}  */
+}  
 
 .footer{
   padding: 30px;
   text-align: center;
   background-color: black;
+  
 }
 .icons{
   margin-bottom: 15px;
   display: flex;
   justify-content: center;
+  align-items: center;
   gap: 25px;
 }
 .icons a{
