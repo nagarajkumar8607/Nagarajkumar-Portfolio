@@ -17,49 +17,131 @@
         <li><a href="#Home">Home</a></li>
         <li><a href="#About">About</a></li>
         <li><a href="#Skills">Skills</a></li>
+        <li><a href="#Project">Project</a></li>
         <li><a href="#Contact">Contact</a></li>
       </ul>
     </nav>
     <main>
       <section class="hero" id="About">
         <div class="hero-text">
-          <h1>Hi, i am <span>Nagarajkumar </span></h1>
+          <h1>Hi, I am <span>Nagarajkumar </span></h1>
           <p>
-            I am passionate Web Developer who recently completed my 12th grade.
-            I enjoy creating visually appealing and user friendly websites .My
-            goal is to turn ideas into meaningful digital experiences.
+            I am a passionate Web Developer who recently completed my 12th
+            grade. I enjoy creating visually appealing and user friendly
+            websites . My goal is to turn ideas into meaningful digital
+            experiences.
           </p>
           <a href="#Contact" class="btn">Contact Me</a>
         </div>
         <div class="hero-img">
-          <img
-            src="./assets/WhatsApp Image 2025-12-30 at 12.21.47 PM.jpeg"
-            alt="Nagarajkumar"
-          />
+          <img src="./assets/Nagarajkumar.jpeg" alt="Nagarajkumar" />
         </div>
       </section>
-      <section class="skills" id="Skills">
+
+      <section class="skills-section" id="Skills">
         <h2>My Skills</h2>
-        <div class="skills-container">
-          <div class="skill-card">HTML</div>
-          <div class="skill-card">CSS</div>
-          <div class="skill-card">JAVASCRIPT</div>
-          <div class="skill-card">PYTHON</div>
-          <div class="skill-card">GITHUB</div>
+
+        <div class="skills-flex">
+          <div class="html-skill">
+            <img src="./assets/html.png" alt="HTML Icon" />
+            <span>HTML</span>
+
+            <div class="progress-bar" id="html-card">
+              <div class="progress html"></div>
+            </div>
+            <p>90%</p>
+          </div>
+
+          <div class="css-skill" id="css">
+            <img src="./assets/css.jpg" alt="CSS Icon" />
+            <span>CSS</span>
+
+            <div class="progress-bar">
+              <div class="progress css"></div>
+            </div>
+            <p>85%</p>
+          </div>
+
+          <div class="js-skill">
+            <img src="./assets/javascript.png" alt="JS Icon" />
+            <span>JavaScript</span>
+
+            <div class="progress-bar">
+              <div class="progress js"></div>
+            </div>
+            <p>60%</p>
+          </div>
+
+          <div class="python-skill">
+            <img src="./assets/python.jpg" alt="Python Icon" />
+            <span>Python</span>
+
+            <div class="progress-bar">
+              <div class="progress python"></div>
+            </div>
+            <p>50%</p>
+          </div>
+
+          <div class="git-skill">
+            <img src="./assets/github.jpg" alt="GitHub Icon" />
+            <span>GitHub</span>
+
+            <div class="progress-bar">
+              <div class="progress github"></div>
+            </div>
+            <p>50%</p>
+          </div>
+
+          <div class="communi-skill">
+            <img src="./assets/communication.png" alt="" />
+            <span>Communication</span>
+            <p>40%</p>
+            <div class="progress-bar">
+              <div class="progress communication"></div>
+              <p>40%</p>
+            </div>
+          </div>
         </div>
       </section>
+
+      <section class="Project" id="Project">
+        <h1>Projects</h1>
+        <div class="projects">
+          <div class="project-1">
+            <h3>static website</h3>
+            <a
+              href="https://nagarajkumar8607.github.io/static-website/"
+              target="_blank"
+              ><img src="./assets/static website-screnshot.png" alt=""
+            /></a>
+          </div>
+          <div class="project-2">
+            <h3>life skills project</h3>
+            <img src="./assets/WhatsApp Image 2026-01-12 at 7.50.45 AM.jpeg" alt="" />
+          </div>
+        </div>
+      </section>
+
       <section class="contact" id="Contact">
         <h2>Contact Me</h2>
         <form class="contact-container" id="contact-container">
-          <!-- <label for="Name">Name :</label> -->
-          <input type="text" placeholder="Your Name "/><br>
-          <!-- <label for="email">email :</label> -->
-          <input type="email" placeholder="Your Email" required /><br>
-          <!-- <label for="message">Message :</label> -->
-          <textarea placeholder="Your Message" required></textarea><br>
-          <button type="submit">Send Message</button>
-        </form>
+          <input
+            type="text"
+            placeholder="Your Name"
+            id="username"
+            required
+          /><br />
 
+          <input
+            type="email"
+            placeholder="Your Email"
+            id="email"
+            required
+          /><br />
+
+          <textarea placeholder="Your Message" required></textarea><br />
+          <button type="submit" onclick="formvalidation()">Send Message</button>
+        </form>
       </section>
     </main>
 
@@ -80,6 +162,6 @@
       <p>&copy;2026 Nagarajkumar | All Rights Reserved</p>
     </footer>
 
-    
+    <script src="./form.js"></script>
   </body>
 </html>

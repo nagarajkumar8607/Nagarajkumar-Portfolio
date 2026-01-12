@@ -1,141 +1,320 @@
-*{
+* {
   margin: 0;
   padding: 0;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Times New Roman";
 }
-body{
-  background-color: rgba(0,0,0,0.909);
+body {
+  background-color: rgba(0, 0, 0, 0.909);
   color: white;
 }
-.navbar{
+
+/* navbar/////////// */
+
+.navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 20px 100px;
+  margin-top: 10px;
 }
-.logo{
-  font-size: 28px;
+.logo {
+  font-size: 38px;
   font-weight: bold;
   color: #22c55e;
 }
 .links {
   list-style-type: none;
   display: flex;
-  gap: 40px;
+  gap: 50px;
 }
-  
-a{
+
+a {
   text-decoration: none;
   color: white;
-  font-size: 18px;
+  font-size: 24px;
+  font-weight: bold;
 }
-a:hover{
+.navbar a:hover {
   color: #22c55e;
 }
 
-.hero{
-  min-height: 90vh;
+.hero {
+  min-height: 50vh;
   display: flex;
-  align-items: center;
   justify-content: space-between;
   padding: 0 100px;
+  margin-top: 120px;
 }
-.hero-text{
-  max-width: 550px;
+.hero-text {
+  max-width: 600px;
 }
-.hero-text h1{
-  font-size: 40px;
+.hero-text h1 {
+  font-size: 45px;
   margin-bottom: 60px;
-
 }
-.hero-text span{
+.hero-text span {
   color: #22c55e;
 }
-.hero-text p{
-  font-size: 18px;
+.hero-text p {
+  font-size: 24px;
   line-height: 1.6;
   margin-bottom: 40px;
   color: #e5e7eb;
 }
-.btn{
-  display: inline-block;
-  padding:12px 28px;
-  background-color: #22c55e;
-  color: black;
-  text-decoration: none;
-  font-weight:lighter;
+.btn {
+  padding: 18px;
+  background-color: skyblue;
+  color: #111;
+  font-weight: bold;
   border-radius: 5px;
-}
-.btn:hover{
-  /* background-color: white; */
-  /* color: #22c55e; */
+  margin-top: 30px;
+  margin-left: 150px;
 }
 
+/* img///////// */
 
-.hero-img img{
-  width: 280px;
-  height: 280px;
+.hero-img img {
+  width: 300px;
+  height: 300px;
   border-radius: 50%;
   object-fit: cover;
   border: 4px solid #22c55e;
-
+  margin-bottom: 100px;
+  margin-right: 50px;
+  margin-top: 10px;
 }
-img:hover{
-  border: 4px solid white; 
-  
+img:hover {
+  border: 4px solid white;
 }
-@media(max-width:768px){
-  .navbar{
+@media (max-width: 768px) {
+  .navbar {
     padding: 20px;
   }
-  .hero{
+  .hero {
     flex-direction: column;
     text-align: center;
     padding: 50px 20px;
   }
-  .hero-img{
+  .hero-img {
     margin-top: 30px;
   }
+}
 
-}
-.skills{
-  padding: 80px 100px;
+/* /skills////// */
+
+.skills-section {
+  padding: 50px 100px;
   text-align: center;
 }
-.skills h2{
-  font-size: 32px;
+
+.skills-section h2 {
   color: #22c55e;
-  margin-bottom: 40px;
+  font-size: 32px;
+  margin-bottom: 50px;
 }
-.skills-container{
+
+.skills-flex {
   display: flex;
-  justify-content: center;
   flex-wrap: wrap;
-  gap: 20px;
+  gap: 30px;
+  justify-content: center;
 }
-.skill-card{
-   /* background-color: gray; */
-   background-color: #1e293b;
-  padding: 20px 40px;
-  border-radius: 12px;
-  font-size: 18px;  
+.html-skill {
+  width: 45%;
+  background: #111;
+  padding: 20px;
+  border-radius: 10px;
+  border: 1px solid #222;
+}
+.css-skill {
+  width: 45%;
+  background: #111;
+  padding: 20px;
+  border-radius: 10px;
+  border: 1px solid #222;
+}
+.js-skill {
+  width: 45%;
+  background: #111;
+  padding: 20px;
+  border-radius: 10px;
+  border: 1px solid #222;
+}
+
+.python-skill {
+  width: 45%;
+  background: #111;
+  padding: 20px;
+  border-radius: 10px;
+  border: 1px solid #222;
+}
+.git-skill {
+  width: 45%;
+  background: #111;
+  padding: 20px;
+  border-radius: 10px;
+  border: 1px solid #222;
+}
+.communi-skill {
+  width: 45%;
+  background: #111;
+  padding: 20px;
+  border-radius: 10px;
+  border: 1px solid #222;
+}
+.html-skill img {
+  width: 40px;
+  height: 40px;
+  vertical-align: middle;
+  margin-right: 10px;
+  border-radius: 50%;
+}
+.css-skill img {
+  width: 40px;
+  height: 40px;
+  vertical-align: middle;
+  margin-right: 10px;
+  border-radius: 50%;
+}
+.js-skill img {
+  width: 40px;
+  height: 40px;
+  vertical-align: middle;
+  margin-right: 10px;
+  border-radius: 50%;
+}
+.python-skill img {
+  width: 40px;
+  height: 40px;
+  vertical-align: middle;
+  margin-right: 10px;
+  border-radius: 50%;
+}
+.git-skill img {
+  width: 40px;
+  height: 40px;
+  vertical-align: middle;
+  margin-right: 10px;
+  border-radius: 50%;
+}
+.communi-skill img {
+  width: 40px;
+  height: 40px;
+  vertical-align: middle;
+  margin-right: 10px;
+  border-radius: 50%;
+}
+.html-skill span {
+  font-size: 22px;
+  color: white;
   font-weight: bold;
-  transition: 0.3s;
-}.skill-card:hover{
-  background-color: #22c55e;
-  transform: translateY(-5px);
-  
 }
- .contact{
+.css-skill span {
+  font-size: 22px;
+  color: white;
+  font-weight: bold;
+}
+.js-skill span {
+  font-size: 22px;
+  color: white;
+  font-weight: bold;
+}
+.python-skill span {
+  font-size: 22px;
+  color: white;
+  font-weight: bold;
+}
+.git-skill span {
+  font-size: 22px;
+  color: white;
+  font-weight: bold;
+}
+.communi-skill span {
+  font-size: 22px;
+  color: white;
+  font-weight: bold;
+}
+.html-skill:hover {
+  border: 2px solid orange;
+}
+.css-skill:hover {
+  border: 2px solid skyblue;
+}
+.js-skill:hover{
+  border: 2px solid yellow;
+}
+.python-skill:hover{
+  border: 2px solid blue;
+}
+.git-skill:hover{
+  border: 2px solid gray;
+}
+.communi-skill:hover{
+  border: 2px solid white;
+}
+
+.progress-bar {
+  width: 100%;
+  background-color: #333;
+  height: 10px;
+  border-radius: 6px;
+  margin-top: 15px;
+  overflow: hidden;
+}
+
+.progress {
+  height: 10px;
+  border-radius: 6px;
+}
+.progress.html {
+  width: 90%;
+  background-color: orange;
+}
+
+.progress.css {
+  width: 85%;
+  background-color: skyblue;
+}
+.progress.js {
+  width: 60%;
+  background-color: yellow;
+}
+.progress.python {
+  width: 50%;
+  background-color: blue;
+}
+.progress.github {
+  width: 50%;
+  background-color: gray;
+}
+.progress.communication {
+  width: 40%;
+  background-color: white;
+}
+
+.skill-box p {
+  margin-top: 8px;
+  font-size: 15px;
+  color: #aaa;
+  font-weight: bold;
+}
+
+/* project////////// */
+
+
+/* contact//////// */
+
+.contact {
   padding: 80px 100px;
   text-align: center;
 }
-.contact h2{
+.contact h2 {
   font-size: 32px;
+  text-align: center;
   color: #22c55e;
   margin-bottom: 40px;
 }
-.contact-container{
+.contact-container {
   display: flex;
   flex-wrap: wrap;
   width: 60%;
@@ -144,12 +323,12 @@ img:hover{
   justify-content: center;
 }
 
-.contact-form{
+.contact-form {
   width: 100%;
   max-width: 500px;
-} 
+}
 .contact input,
-.contact textarea{
+.contact textarea {
   width: 100%;
   padding: 14px;
   margin-bottom: 20px;
@@ -159,47 +338,74 @@ img:hover{
   color: black;
   font-size: 18px;
 }
-.contact textarea{
+.contact textarea {
   resize: none;
   height: 140px;
-
 }
- .contact button{
+.contact button {
   width: 50%;
   padding: 14px;
   background-color: #22c55e;
-  color: black; 
+  color: black;
   border: none;
   border-radius: 10px;
   font-size: 18px;
   font-weight: bold;
-  cursor:pointer;
+  cursor: pointer;
   transition: 0.3s;
- }    
+}
 
-.footer{
+/* footer//////// */
+
+.footer {
   padding: 30px;
   text-align: center;
   background-color: black;
-  
 }
-.icons{
+.icons {
   margin-bottom: 15px;
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 25px;
 }
-.icons a{
+.icons a {
   color: #94a3b8;
   font-size: 24px;
   transition: 0.3s;
 }
-.icons a:hover{
+.icons a:hover {
   color: #22c55e;
   transform: translateY(-5px);
 }
-.footer p{
+.footer p {
   font-size: 14px;
   color: #64748b;
+}
+.projects{
+  display: flex;
+  width: 100vw;
+  justify-content: center;
+  gap: 100px;
+  margin-top: 100px;
+}
+
+
+.project-1 img{
+  width: 500px;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+}
+.project-2 img{
+  width: 500px;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+}
+
+.Project h1 {
+  color: #22c55e;
+  text-align: center;
+  margin-top: 30px;
 }
